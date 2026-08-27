@@ -4,9 +4,9 @@
 
 [![DSH Plugin](https://img.shields.io/badge/DSH-Plugin-111111)](https://github.com/niushuanan/xiaozhuang-dsh) [![Release](https://img.shields.io/badge/release-xiaozhuang--v0.4.2-2563eb)](https://github.com/niushuanan/dsh-skill-manager/releases/tag/xiaozhuang-v0.4.2) [![MIT](https://img.shields.io/badge/license-MIT-16a34a)](LICENSE)
 
-在设置页浏览现有 Skill、文件目录和正文，并让 AI 从文件、文件夹、ZIP 或 GitHub 自适应导入。
+在设置页浏览现有 Skill 的单列目录：图标、AI 判定的分类标签、两行简介与可写徽章；点开可看文件目录和正文，并让 AI 从文件、文件夹、ZIP 或 GitHub 自适应导入。
 
-<p align="center"><img src="docs/11-skill-manager.webp" alt="Skill 介绍、文件目录和内容预览" width="800"></p>
+<p align="center"><img src="docs/11-skill-manager.png" alt="Skill 管理单列目录：分类标签、两行简介与可写徽章" width="800"></p>
 
 ## 安装
 
@@ -24,4 +24,4 @@
 
 ## 来源与许可
 
-本仓库是 [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh) 的单向发布副本，不是独立开发源。当前内容同步自主仓库 commit [`49b1c5207b`](https://github.com/niushuanan/xiaozhuang-dsh/commit/49b1c5207b1556515752c6bf9e7902c1a5964ad9)，版本为 [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-skill-manager/releases/tag/xiaozhuang-v0.4.2)。代码采用 [MIT License](LICENSE)。
+本仓库是 [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh) 的单向发布副本，不是独立开发源。当前内容同步自主仓库 commit [`38c2d27e58`](https://github.com/niushuanan/xiaozhuang-dsh/commit/38c2d27e5849b62f48d43f461b071218cfd3686d)，版本为 [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-skill-manager/releases/tag/xiaozhuang-v0.4.2)。代码采用 [MIT License](LICENSE)。

@@ -6,7 +6,7 @@ English | [中文](README.md)
 
 Browse installed Skills, their files, and content in Settings, then adaptively import from a file, folder, ZIP, or GitHub with AI.
 
-<p align="center"><img src="docs/11-skill-manager.webp" alt="Skill description, file tree, and content preview" width="800"></p>
+<p align="center"><img src="docs/11-skill-manager.png" alt="Single-column Skill catalog with category tags, two-line introductions, and writable badges" width="800"></p>
 
 ## Install
 
@@ -24,4 +24,4 @@ Browse installed Skills, their files, and content in Settings, then adaptively i
 
 ## Source and license
 
-This repository is a one-way distribution mirror of [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh), not an independent development source. It is synchronized from main-repository commit [`49b1c5207b`](https://github.com/niushuanan/xiaozhuang-dsh/commit/49b1c5207b1556515752c6bf9e7902c1a5964ad9) and released as [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-skill-manager/releases/tag/xiaozhuang-v0.4.2). Licensed under the [MIT License](LICENSE).
+This repository is a one-way distribution mirror of [Xiaozhuang DSH](https://github.com/niushuanan/xiaozhuang-dsh), not an independent development source. It is synchronized from main-repository commit [`38c2d27e58`](https://github.com/niushuanan/xiaozhuang-dsh/commit/38c2d27e5849b62f48d43f461b071218cfd3686d) and released as [`xiaozhuang-v0.4.2`](https://github.com/niushuanan/dsh-skill-manager/releases/tag/xiaozhuang-v0.4.2). Licensed under the [MIT License](LICENSE).

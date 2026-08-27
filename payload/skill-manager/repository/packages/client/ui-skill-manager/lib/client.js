@@ -7,8 +7,8 @@ window.__ModuleLoader__.load({
 		let react_jsx_runtime = require("react/jsx-runtime");
 		let react = require("react");
 		let _deepseek_ai_dsh_client_ui_primitives = require("@deepseek-ai/dsh-client-ui-primitives");
-		//#region \0dsh-css:dsh-source/packages/client/ui-skill-manager/src/client/SkillManagerSection.module.css.mjs
-		const css = ".fH9eOW_root{height:100%;min-height:0;color:var(--dsw-alias-label-primary);flex-direction:column;display:flex}.fH9eOW_header{flex:none;justify-content:space-between;align-items:flex-start;gap:20px;padding:22px 28px 16px;display:flex}.fH9eOW_header h2,.fH9eOW_detailHeader h3{margin:0;font-size:20px;font-weight:650}.fH9eOW_header p{color:var(--dsw-alias-label-secondary);margin:6px 0 0;font-size:13px;line-height:20px}.fH9eOW_importActions{flex:none;justify-content:flex-end;display:flex}.fH9eOW_importButton{background:var(--dsw-alias-label-primary);min-height:34px;color:var(--dsw-alias-bg-layer-1);cursor:pointer;font:inherit;border:0;border-radius:9px;justify-content:center;align-items:center;gap:8px;padding:0 14px;font-size:12px;font-weight:600;display:inline-flex}.fH9eOW_importButton:hover:not(:disabled){opacity:.86}.fH9eOW_importButton:focus-visible,.fH9eOW_github button:focus-visible,.fH9eOW_introToggle:focus-visible{outline:2px solid color-mix(in srgb, var(--dsw-alias-brand-primary) 35%, transparent);outline-offset:2px}.fH9eOW_importButton:disabled,.fH9eOW_github button:disabled{cursor:default;opacity:.45}.fH9eOW_hiddenInput{opacity:0;pointer-events:none;width:1px;height:1px;position:fixed}.fH9eOW_github{border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-2);border-radius:12px;flex:none;grid-template-columns:max-content minmax(220px,1fr) max-content;align-items:center;gap:12px;margin:0 28px 16px;padding:12px;display:grid}.fH9eOW_githubCopy{flex-direction:column;gap:2px;min-width:140px;display:flex}.fH9eOW_githubCopy strong{font-size:12px;font-weight:600;line-height:18px}.fH9eOW_githubCopy span{color:var(--dsw-alias-label-caption);font-size:11px;line-height:16px}.fH9eOW_github input{box-sizing:border-box;border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-1);width:100%;min-width:0;height:34px;color:inherit;font:inherit;border-radius:8px;outline:none;padding:0 11px;font-size:12px}.fH9eOW_github input:focus{border-color:color-mix(in srgb, var(--dsw-alias-brand-primary) 55%, var(--dsw-alias-border-l1));box-shadow:0 0 0 2px color-mix(in srgb, var(--dsw-alias-brand-primary) 12%, transparent)}.fH9eOW_github button{background:var(--dsw-alias-label-primary);height:32px;color:var(--dsw-alias-bg-layer-1);cursor:pointer;font:inherit;border:0;border-radius:8px;padding:0 12px;font-size:11px;font-weight:600}.fH9eOW_status{background:var(--dsw-alias-bg-layer-2);color:var(--dsw-alias-label-secondary);border-radius:8px;flex:none;margin:0 28px 12px;padding:8px 11px;font-size:12px;line-height:18px}.fH9eOW_workspace{border-top:1px solid var(--dsw-alias-border-l2);flex:1;min-height:340px;overflow:hidden}.fH9eOW_skills{box-sizing:border-box;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));align-content:start;gap:4px 8px;min-width:0;height:100%;padding:8px 12px 16px;display:grid;overflow:hidden auto}.fH9eOW_skillsHeader,.fH9eOW_fileTreeHeader{z-index:1;color:var(--dsw-alias-label-caption);background:var(--dsw-alias-bg-layer-1);justify-content:space-between;align-items:center;font-size:11px;line-height:18px;display:flex;position:sticky;top:0}.fH9eOW_skillsHeader{grid-column:1/-1;padding:5px 8px 7px}.fH9eOW_skillsHeader strong{font-weight:500}.fH9eOW_skillRow{width:100%;min-height:48px;color:inherit;cursor:pointer;text-align:left;background:0 0;border:0;border-radius:9px;align-items:center;gap:9px;padding:8px 9px;display:flex}.fH9eOW_skillRow:hover,.fH9eOW_skillRow:focus-visible{background:var(--dsw-alias-interactive-bg-hover)}.fH9eOW_skillCopy{flex-direction:column;flex:1;gap:1px;min-width:0;display:flex}.fH9eOW_skillCopy strong{text-overflow:ellipsis;white-space:nowrap;font-size:13px;font-weight:600;overflow:hidden}.fH9eOW_skillCopy small{color:var(--dsw-alias-label-caption);font-size:10px;line-height:15px}.fH9eOW_writable,.fH9eOW_readonly{border-radius:999px;flex:none;padding:2px 7px;font-size:10px;line-height:16px}.fH9eOW_writable{background:color-mix(in srgb, var(--dsw-alias-brand-primary) 12%, transparent);color:var(--dsw-alias-brand-primary)}.fH9eOW_readonly{background:var(--dsw-alias-bg-layer-2);color:var(--dsw-alias-label-caption)}.fH9eOW_detail{flex-direction:column;min-width:0;height:100%;display:flex;overflow:hidden}.fH9eOW_detailHeader{border-bottom:1px solid var(--dsw-alias-border-l2);flex:none;grid-template-columns:88px minmax(0,1fr);gap:16px;padding:14px 20px;display:grid}.fH9eOW_backButton{height:30px;color:var(--dsw-alias-label-secondary);cursor:pointer;font:inherit;background:0 0;border:0;border-radius:7px;justify-self:start;align-items:center;gap:3px;padding:0 8px 0 4px;font-size:11px;display:inline-flex}.fH9eOW_backButton:hover,.fH9eOW_backButton:focus-visible{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.fH9eOW_detailSummary{min-width:0}.fH9eOW_detailTitle{justify-content:space-between;align-items:flex-start;gap:14px;display:flex}.fH9eOW_detailTitle>div{align-items:baseline;gap:9px;min-width:0;display:flex}.fH9eOW_detailHeader h3{text-overflow:ellipsis;white-space:nowrap;font-size:16px;line-height:22px;overflow:hidden}.fH9eOW_detailTitle>div>span{color:var(--dsw-alias-label-caption);flex:none;font-size:10px}.fH9eOW_introText{color:var(--dsw-alias-label-secondary);overflow-wrap:anywhere;white-space:pre-line;margin:8px 0 0;font-size:12px;line-height:19px}.fH9eOW_introClamped{-webkit-line-clamp:3;-webkit-box-orient:vertical;display:-webkit-box;overflow:hidden}.fH9eOW_introToggle{color:var(--dsw-alias-label-secondary);cursor:pointer;font:inherit;background:0 0;border:0;margin:6px 0 0;padding:0;font-size:11px;line-height:18px}.fH9eOW_introToggle:hover{color:var(--dsw-alias-label-primary)}.fH9eOW_files{flex:1;grid-template-columns:190px minmax(0,1fr);min-height:0;display:grid}.fH9eOW_fileTree{border-right:1px solid var(--dsw-alias-border-l2);min-width:0;padding:8px;overflow:hidden auto}.fH9eOW_fileTreeHeader{padding:5px 7px 7px}.fH9eOW_fileRow{width:100%;color:inherit;cursor:pointer;text-align:left;text-overflow:ellipsis;white-space:nowrap;background:0 0;border:0;border-radius:7px;padding-top:7px;padding-bottom:7px;padding-right:8px;font-size:11px;line-height:18px;display:block;overflow:hidden}.fH9eOW_fileRow:hover,.fH9eOW_fileRow[aria-selected=true]{background:var(--dsw-alias-interactive-bg-hover)}.fH9eOW_preview{flex-direction:column;min-width:0;min-height:0;display:flex;overflow:hidden}.fH9eOW_previewHeader{border-bottom:1px solid var(--dsw-alias-border-l1);min-height:42px;color:var(--dsw-alias-label-secondary);flex:none;justify-content:space-between;align-items:center;gap:12px;padding:0 20px;font-size:10px;display:flex}.fH9eOW_previewHeader strong{min-width:0;color:var(--dsw-alias-label-primary);text-overflow:ellipsis;white-space:nowrap;font-size:11px;font-weight:550;overflow:hidden}.fH9eOW_previewHeader span{flex:none}.fH9eOW_previewBody{flex:1;min-height:0;padding:20px 24px 28px;overflow:auto}.fH9eOW_textPreview{overflow-wrap:anywhere;white-space:pre-wrap;margin:0;font:12px/1.65 ui-monospace,SFMono-Regular,Menlo,monospace}.fH9eOW_markdown{max-width:760px;margin:0 auto;font-size:13px;line-height:1.7}.fH9eOW_markdown h1{margin:0 0 16px;font-size:22px;line-height:1.35}.fH9eOW_markdown h2{margin:26px 0 12px;font-size:18px;line-height:1.4}.fH9eOW_markdown h3{margin:22px 0 10px;font-size:15px;line-height:1.5}.fH9eOW_markdown p,.fH9eOW_markdown ul,.fH9eOW_markdown ol{margin-top:10px;margin-bottom:10px}.fH9eOW_imagePreview{object-fit:contain;max-width:100%;max-height:520px;margin:auto;display:block}.fH9eOW_binaryPreview,.fH9eOW_emptyDetail{min-height:220px;color:var(--dsw-alias-label-secondary);flex-direction:column;justify-content:center;align-items:center;gap:8px;display:flex}.fH9eOW_binaryPreview span{font-size:12px}.fH9eOW_empty,.fH9eOW_emptyDetail p{color:var(--dsw-alias-label-caption);text-align:center;font-size:12px}@media (width<=840px){.fH9eOW_files{grid-template-columns:170px minmax(0,1fr)}.fH9eOW_github{grid-template-columns:minmax(0,1fr) max-content}.fH9eOW_githubCopy{display:none}}@media (width<=680px){.fH9eOW_header{align-items:center;padding-inline:18px}.fH9eOW_header p{display:none}.fH9eOW_github{margin-inline:18px}.fH9eOW_files{grid-template-columns:140px minmax(0,1fr)}.fH9eOW_detailHeader{grid-template-columns:1fr;gap:6px}.fH9eOW_previewBody{padding-inline:18px}}";
+		//#region \0dsh-css:/Users/zhuanghongkai/Desktop/迭代DSH/xiaozhuang-dsh/packages/client/ui-skill-manager/src/client/SkillManagerSection.module.css.mjs
+		const css = ".B3Kk8G_root{height:100%;min-height:0;color:var(--dsw-alias-label-primary);flex-direction:column;display:flex}.B3Kk8G_header{flex:none;justify-content:space-between;align-items:flex-start;gap:20px;padding:22px 28px 16px;display:flex}.B3Kk8G_header h2,.B3Kk8G_detailHeader h3{margin:0;font-size:20px;font-weight:650}.B3Kk8G_header p{color:var(--dsw-alias-label-secondary);margin:6px 0 0;font-size:13px;line-height:20px}.B3Kk8G_importActions{flex:none;justify-content:flex-end;display:flex}.B3Kk8G_importButton{background:var(--dsw-alias-label-primary);min-height:34px;color:var(--dsw-alias-bg-layer-1);cursor:pointer;font:inherit;border:0;border-radius:9px;justify-content:center;align-items:center;gap:8px;padding:0 14px;font-size:12px;font-weight:600;display:inline-flex}.B3Kk8G_importButton:hover:not(:disabled){opacity:.86}.B3Kk8G_importButton:focus-visible,.B3Kk8G_github button:focus-visible,.B3Kk8G_introToggle:focus-visible{outline:2px solid color-mix(in srgb, var(--dsw-alias-brand-primary) 35%, transparent);outline-offset:2px}.B3Kk8G_importButton:disabled,.B3Kk8G_github button:disabled{cursor:default;opacity:.45}.B3Kk8G_hiddenInput{opacity:0;pointer-events:none;width:1px;height:1px;position:fixed}.B3Kk8G_github{border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-2);border-radius:12px;flex:none;grid-template-columns:max-content minmax(220px,1fr) max-content;align-items:center;gap:12px;margin:0 28px 16px;padding:12px;display:grid}.B3Kk8G_githubCopy{flex-direction:column;gap:2px;min-width:140px;display:flex}.B3Kk8G_githubCopy strong{font-size:12px;font-weight:600;line-height:18px}.B3Kk8G_githubCopy span{color:var(--dsw-alias-label-caption);font-size:11px;line-height:16px}.B3Kk8G_github input{box-sizing:border-box;border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-1);width:100%;min-width:0;height:34px;color:inherit;font:inherit;border-radius:8px;outline:none;padding:0 11px;font-size:12px}.B3Kk8G_github input:focus{border-color:color-mix(in srgb, var(--dsw-alias-brand-primary) 55%, var(--dsw-alias-border-l1));box-shadow:0 0 0 2px color-mix(in srgb, var(--dsw-alias-brand-primary) 12%, transparent)}.B3Kk8G_github button{background:var(--dsw-alias-label-primary);height:32px;color:var(--dsw-alias-bg-layer-1);cursor:pointer;font:inherit;border:0;border-radius:8px;padding:0 12px;font-size:11px;font-weight:600}.B3Kk8G_status{background:var(--dsw-alias-bg-layer-2);color:var(--dsw-alias-label-secondary);border-radius:8px;flex:none;margin:0 28px 12px;padding:8px 11px;font-size:12px;line-height:18px}.B3Kk8G_workspace{border-top:1px solid var(--dsw-alias-border-l2);flex:1;min-height:340px;overflow:hidden}.B3Kk8G_skills{box-sizing:border-box;grid-template-columns:minmax(0,1fr);align-content:start;gap:2px;width:100%;min-width:0;max-width:820px;height:100%;padding:8px 12px 16px;display:grid;overflow:hidden auto}.B3Kk8G_skillsHeader,.B3Kk8G_fileTreeHeader{z-index:1;color:var(--dsw-alias-label-caption);background:var(--dsw-alias-bg-layer-1);justify-content:space-between;align-items:center;font-size:11px;line-height:18px;display:flex;position:sticky;top:0}.B3Kk8G_skillsHeader{grid-column:1/-1;padding:5px 8px 7px}.B3Kk8G_skillsHeader strong{font-weight:500}.B3Kk8G_skillRow{width:100%;color:inherit;cursor:pointer;text-align:left;background:0 0;border:0;border-radius:9px;align-items:flex-start;gap:9px;padding:10px;display:flex}.B3Kk8G_skillRow:hover,.B3Kk8G_skillRow:focus-visible{background:var(--dsw-alias-interactive-bg-hover)}.B3Kk8G_skillRow>svg{flex:none;margin-top:3px}.B3Kk8G_skillCopy{flex-direction:column;flex:1;gap:3px;min-width:0;display:flex}.B3Kk8G_skillTitle{align-items:center;gap:7px;min-width:0;display:flex}.B3Kk8G_skillTitle strong{text-overflow:ellipsis;white-space:nowrap;font-size:13px;font-weight:600;line-height:20px;overflow:hidden}.B3Kk8G_skillCategory{background:var(--dsw-alias-bg-layer-2);max-width:140px;color:var(--dsw-alias-label-secondary);text-overflow:ellipsis;white-space:nowrap;border-radius:999px;flex:none;padding:1px 7px;font-size:10px;line-height:16px;overflow:hidden}.B3Kk8G_skillIntro{color:var(--dsw-alias-label-secondary);overflow-wrap:anywhere;-webkit-line-clamp:2;-webkit-box-orient:vertical;margin:0;font-size:12px;line-height:18px;display:-webkit-box;overflow:hidden}.B3Kk8G_writable,.B3Kk8G_readonly{border-radius:999px;flex:none;align-self:flex-start;padding:2px 7px;font-size:10px;line-height:16px}.B3Kk8G_writable{background:color-mix(in srgb, var(--dsw-alias-brand-primary) 12%, transparent);color:var(--dsw-alias-brand-primary)}.B3Kk8G_readonly{background:var(--dsw-alias-bg-layer-2);color:var(--dsw-alias-label-caption)}.B3Kk8G_detail{flex-direction:column;min-width:0;height:100%;display:flex;overflow:hidden}.B3Kk8G_detailHeader{border-bottom:1px solid var(--dsw-alias-border-l2);flex:none;grid-template-columns:88px minmax(0,1fr);gap:16px;padding:14px 20px;display:grid}.B3Kk8G_backButton{height:30px;color:var(--dsw-alias-label-secondary);cursor:pointer;font:inherit;background:0 0;border:0;border-radius:7px;justify-self:start;align-items:center;gap:3px;padding:0 8px 0 4px;font-size:11px;display:inline-flex}.B3Kk8G_backButton:hover,.B3Kk8G_backButton:focus-visible{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.B3Kk8G_detailSummary{min-width:0}.B3Kk8G_detailTitle{justify-content:space-between;align-items:flex-start;gap:14px;display:flex}.B3Kk8G_detailTitle>div{align-items:baseline;gap:9px;min-width:0;display:flex}.B3Kk8G_detailHeader h3{text-overflow:ellipsis;white-space:nowrap;font-size:16px;line-height:22px;overflow:hidden}.B3Kk8G_detailTitle>div>span{color:var(--dsw-alias-label-caption);flex:none;font-size:10px}.B3Kk8G_introText{color:var(--dsw-alias-label-secondary);overflow-wrap:anywhere;white-space:pre-line;margin:8px 0 0;font-size:12px;line-height:19px}.B3Kk8G_introClamped{-webkit-line-clamp:3;-webkit-box-orient:vertical;display:-webkit-box;overflow:hidden}.B3Kk8G_introToggle{color:var(--dsw-alias-label-secondary);cursor:pointer;font:inherit;background:0 0;border:0;margin:6px 0 0;padding:0;font-size:11px;line-height:18px}.B3Kk8G_introToggle:hover{color:var(--dsw-alias-label-primary)}.B3Kk8G_files{flex:1;grid-template-columns:190px minmax(0,1fr);min-height:0;display:grid}.B3Kk8G_fileTree{border-right:1px solid var(--dsw-alias-border-l2);min-width:0;padding:8px;overflow:hidden auto}.B3Kk8G_fileTreeHeader{padding:5px 7px 7px}.B3Kk8G_fileRow{width:100%;color:inherit;cursor:pointer;text-align:left;text-overflow:ellipsis;white-space:nowrap;background:0 0;border:0;border-radius:7px;padding-top:7px;padding-bottom:7px;padding-right:8px;font-size:11px;line-height:18px;display:block;overflow:hidden}.B3Kk8G_fileRow:hover,.B3Kk8G_fileRow[aria-selected=true]{background:var(--dsw-alias-interactive-bg-hover)}.B3Kk8G_preview{flex-direction:column;min-width:0;min-height:0;display:flex;overflow:hidden}.B3Kk8G_previewHeader{border-bottom:1px solid var(--dsw-alias-border-l1);min-height:42px;color:var(--dsw-alias-label-secondary);flex:none;justify-content:space-between;align-items:center;gap:12px;padding:0 20px;font-size:10px;display:flex}.B3Kk8G_previewHeader strong{min-width:0;color:var(--dsw-alias-label-primary);text-overflow:ellipsis;white-space:nowrap;font-size:11px;font-weight:550;overflow:hidden}.B3Kk8G_previewHeader span{flex:none}.B3Kk8G_previewBody{flex:1;min-height:0;padding:20px 24px 28px;overflow:auto}.B3Kk8G_textPreview{overflow-wrap:anywhere;white-space:pre-wrap;margin:0;font:12px/1.65 ui-monospace,SFMono-Regular,Menlo,monospace}.B3Kk8G_markdown{max-width:760px;margin:0 auto;font-size:13px;line-height:1.7}.B3Kk8G_markdown h1{margin:0 0 16px;font-size:22px;line-height:1.35}.B3Kk8G_markdown h2{margin:26px 0 12px;font-size:18px;line-height:1.4}.B3Kk8G_markdown h3{margin:22px 0 10px;font-size:15px;line-height:1.5}.B3Kk8G_markdown p,.B3Kk8G_markdown ul,.B3Kk8G_markdown ol{margin-top:10px;margin-bottom:10px}.B3Kk8G_imagePreview{object-fit:contain;max-width:100%;max-height:520px;margin:auto;display:block}.B3Kk8G_binaryPreview,.B3Kk8G_emptyDetail{min-height:220px;color:var(--dsw-alias-label-secondary);flex-direction:column;justify-content:center;align-items:center;gap:8px;display:flex}.B3Kk8G_binaryPreview span{font-size:12px}.B3Kk8G_empty,.B3Kk8G_emptyDetail p{color:var(--dsw-alias-label-caption);text-align:center;font-size:12px}@media (width<=840px){.B3Kk8G_files{grid-template-columns:170px minmax(0,1fr)}.B3Kk8G_github{grid-template-columns:minmax(0,1fr) max-content}.B3Kk8G_githubCopy{display:none}}@media (width<=680px){.B3Kk8G_header{align-items:center;padding-inline:18px}.B3Kk8G_header p{display:none}.B3Kk8G_github{margin-inline:18px}.B3Kk8G_files{grid-template-columns:140px minmax(0,1fr)}.B3Kk8G_detailHeader{grid-template-columns:1fr;gap:6px}.B3Kk8G_previewBody{padding-inline:18px}}";
 		const tagId = "@deepseek-ai/dsh-client-ui-skill-manager/SkillManagerSection.module.css";
 		if (typeof document !== "undefined" && document.querySelector("style[data-plugin-css=" + JSON.stringify(tagId) + "]") === null) {
 			const tag = document.createElement("style");
@@ -18,42 +18,45 @@ window.__ModuleLoader__.load({
 			document.head.appendChild(tag);
 		}
 		var SkillManagerSection_module_css_default = {
-			"backButton": "fH9eOW_backButton",
-			"binaryPreview": "fH9eOW_binaryPreview",
-			"detail": "fH9eOW_detail",
-			"detailHeader": "fH9eOW_detailHeader",
-			"detailSummary": "fH9eOW_detailSummary",
-			"detailTitle": "fH9eOW_detailTitle",
-			"empty": "fH9eOW_empty",
-			"emptyDetail": "fH9eOW_emptyDetail",
-			"fileRow": "fH9eOW_fileRow",
-			"fileTree": "fH9eOW_fileTree",
-			"fileTreeHeader": "fH9eOW_fileTreeHeader",
-			"files": "fH9eOW_files",
-			"github": "fH9eOW_github",
-			"githubCopy": "fH9eOW_githubCopy",
-			"header": "fH9eOW_header",
-			"hiddenInput": "fH9eOW_hiddenInput",
-			"imagePreview": "fH9eOW_imagePreview",
-			"importActions": "fH9eOW_importActions",
-			"importButton": "fH9eOW_importButton",
-			"introClamped": "fH9eOW_introClamped",
-			"introText": "fH9eOW_introText",
-			"introToggle": "fH9eOW_introToggle",
-			"markdown": "fH9eOW_markdown",
-			"preview": "fH9eOW_preview",
-			"previewBody": "fH9eOW_previewBody",
-			"previewHeader": "fH9eOW_previewHeader",
-			"readonly": "fH9eOW_readonly",
-			"root": "fH9eOW_root",
-			"skillCopy": "fH9eOW_skillCopy",
-			"skillRow": "fH9eOW_skillRow",
-			"skills": "fH9eOW_skills",
-			"skillsHeader": "fH9eOW_skillsHeader",
-			"status": "fH9eOW_status",
-			"textPreview": "fH9eOW_textPreview",
-			"workspace": "fH9eOW_workspace",
-			"writable": "fH9eOW_writable"
+			"backButton": "B3Kk8G_backButton",
+			"binaryPreview": "B3Kk8G_binaryPreview",
+			"detail": "B3Kk8G_detail",
+			"detailHeader": "B3Kk8G_detailHeader",
+			"detailSummary": "B3Kk8G_detailSummary",
+			"detailTitle": "B3Kk8G_detailTitle",
+			"empty": "B3Kk8G_empty",
+			"emptyDetail": "B3Kk8G_emptyDetail",
+			"fileRow": "B3Kk8G_fileRow",
+			"fileTree": "B3Kk8G_fileTree",
+			"fileTreeHeader": "B3Kk8G_fileTreeHeader",
+			"files": "B3Kk8G_files",
+			"github": "B3Kk8G_github",
+			"githubCopy": "B3Kk8G_githubCopy",
+			"header": "B3Kk8G_header",
+			"hiddenInput": "B3Kk8G_hiddenInput",
+			"imagePreview": "B3Kk8G_imagePreview",
+			"importActions": "B3Kk8G_importActions",
+			"importButton": "B3Kk8G_importButton",
+			"introClamped": "B3Kk8G_introClamped",
+			"introText": "B3Kk8G_introText",
+			"introToggle": "B3Kk8G_introToggle",
+			"markdown": "B3Kk8G_markdown",
+			"preview": "B3Kk8G_preview",
+			"previewBody": "B3Kk8G_previewBody",
+			"previewHeader": "B3Kk8G_previewHeader",
+			"readonly": "B3Kk8G_readonly",
+			"root": "B3Kk8G_root",
+			"skillCategory": "B3Kk8G_skillCategory",
+			"skillCopy": "B3Kk8G_skillCopy",
+			"skillIntro": "B3Kk8G_skillIntro",
+			"skillRow": "B3Kk8G_skillRow",
+			"skillTitle": "B3Kk8G_skillTitle",
+			"skills": "B3Kk8G_skills",
+			"skillsHeader": "B3Kk8G_skillsHeader",
+			"status": "B3Kk8G_status",
+			"textPreview": "B3Kk8G_textPreview",
+			"workspace": "B3Kk8G_workspace",
+			"writable": "B3Kk8G_writable"
 		};
 		//#endregion
 		//#region lib/types/client/SkillManagerSection.js
@@ -64,6 +67,9 @@ window.__ModuleLoader__.load({
 			custom: "自定义",
 			bundled: "内置"
 		};
+		function skillIntro(skill) {
+			return [skill.description, skill.whenToUse].filter((part) => part !== void 0 && part.trim() !== "").join("\n\n");
+		}
 		function fileBase64(file) {
 			return new Promise((resolve, reject) => {
 				const reader = new FileReader();
@@ -312,25 +318,37 @@ window.__ModuleLoader__.load({
 									className: SkillManagerSection_module_css_default.skillsHeader,
 									children: [(0, react_jsx_runtime.jsx)("span", { children: "全部 Skill" }), (0, react_jsx_runtime.jsx)("strong", { children: skills.length })]
 								}),
-								skills.map((skill) => (0, react_jsx_runtime.jsxs)("button", {
-									type: "button",
-									className: SkillManagerSection_module_css_default.skillRow,
-									onClick: () => {
-										openSkill(skill.name);
-									},
-									disabled: busy,
-									children: [
-										(0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.IconSkillOutline16, { size: 16 }),
-										(0, react_jsx_runtime.jsxs)("span", {
-											className: SkillManagerSection_module_css_default.skillCopy,
-											children: [(0, react_jsx_runtime.jsx)("strong", { children: skill.name }), (0, react_jsx_runtime.jsx)("small", { children: SOURCE_LABELS[skill.sourceGroup] })]
-										}),
-										(0, react_jsx_runtime.jsx)("span", {
-											className: skill.writable ? SkillManagerSection_module_css_default.writable : SkillManagerSection_module_css_default.readonly,
-											children: skill.writable ? "可写" : "只读"
-										})
-									]
-								}, `${skill.source}:${skill.name}`)),
+								skills.map((skill) => {
+									const intro = skillIntro(skill);
+									return (0, react_jsx_runtime.jsxs)("button", {
+										type: "button",
+										className: SkillManagerSection_module_css_default.skillRow,
+										onClick: () => {
+											openSkill(skill.name);
+										},
+										disabled: busy,
+										children: [
+											(0, react_jsx_runtime.jsx)(_deepseek_ai_dsh_client_ui_primitives.IconSkillOutline16, { size: 16 }),
+											(0, react_jsx_runtime.jsxs)("span", {
+												className: SkillManagerSection_module_css_default.skillCopy,
+												children: [(0, react_jsx_runtime.jsxs)("span", {
+													className: SkillManagerSection_module_css_default.skillTitle,
+													children: [(0, react_jsx_runtime.jsx)("strong", { children: skill.name }), skill.category !== void 0 && skill.category.trim() !== "" && (0, react_jsx_runtime.jsx)("span", {
+														className: SkillManagerSection_module_css_default.skillCategory,
+														children: skill.category
+													})]
+												}), intro.trim() === "" ? null : (0, react_jsx_runtime.jsx)("p", {
+													className: SkillManagerSection_module_css_default.skillIntro,
+													children: intro
+												})]
+											}),
+											(0, react_jsx_runtime.jsx)("span", {
+												className: skill.writable ? SkillManagerSection_module_css_default.writable : SkillManagerSection_module_css_default.readonly,
+												children: skill.writable ? "可写" : "只读"
+											})
+										]
+									}, `${skill.source}:${skill.name}`);
+								}),
 								skills.length === 0 && (0, react_jsx_runtime.jsx)("p", {
 									className: SkillManagerSection_module_css_default.empty,
 									children: "当前没有 Skill"
@@ -356,7 +374,14 @@ window.__ModuleLoader__.load({
 									children: [
 										(0, react_jsx_runtime.jsxs)("div", {
 											className: SkillManagerSection_module_css_default.detailTitle,
-											children: [(0, react_jsx_runtime.jsxs)("div", { children: [(0, react_jsx_runtime.jsx)("h3", { children: detail.name }), (0, react_jsx_runtime.jsxs)("span", { children: [detail.files.length, " 个文件"] })] }), (0, react_jsx_runtime.jsx)("span", {
+											children: [(0, react_jsx_runtime.jsxs)("div", { children: [
+												(0, react_jsx_runtime.jsx)("h3", { children: detail.name }),
+												(0, react_jsx_runtime.jsxs)("span", { children: [detail.files.length, " 个文件"] }),
+												detail.category !== void 0 && detail.category.trim() !== "" && (0, react_jsx_runtime.jsx)("span", {
+													className: SkillManagerSection_module_css_default.skillCategory,
+													children: detail.category
+												})
+											] }), (0, react_jsx_runtime.jsx)("span", {
 												className: detail.writable ? SkillManagerSection_module_css_default.writable : SkillManagerSection_module_css_default.readonly,
 												children: detail.writable ? "个人 · 可写" : `${SOURCE_LABELS[detail.sourceGroup]} · 只读`
 											})]

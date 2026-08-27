@@ -3,6 +3,8 @@ import type { UploadedSkillFile } from './types.ts';
 export interface NormalizedSkill {
     readonly name: string;
     readonly description: string;
+    /** Short human-readable grouping tag required in the emitted frontmatter. */
+    readonly category: string;
     readonly skillMarkdown: string;
     readonly resources: readonly {
         readonly sourcePath: string;

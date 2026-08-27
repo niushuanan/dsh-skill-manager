@@ -4,6 +4,7 @@ interface SkillSummaryLike {
     readonly name: string;
     readonly description: string;
     readonly whenToUse?: string;
+    readonly category?: string;
     readonly source: string;
     readonly provider: string;
 }
