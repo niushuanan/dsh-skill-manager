@@ -7,7 +7,7 @@ import { randomUUID } from "node:crypto";
 import { unzipSync } from "fflate";
 import { isSkillName } from "@deepseek-ai/dsh-skill";
 import { BlockAssembler, createUserMessage } from "@deepseek-ai/dsh-llm";
-//#region lib/types/catalog.js
+//#region src/catalog.ts
 function sourceGroup(source) {
 	if (source === "user-dsh" || source === "user-agents") return "personal";
 	if (source === "project-dsh" || source === "project-agents") return "project";
@@ -193,7 +193,7 @@ async function readManagedSkill(skills, cwd, name, scope) {
 	};
 }
 //#endregion
-//#region lib/types/import.js
+//#region src/import.ts
 const MAX_IMPORT_FILES = 512;
 const MAX_FILE_BYTES = 10 * 1024 * 1024;
 const MAX_TOTAL_BYTES = 24 * 1024 * 1024;
@@ -478,7 +478,7 @@ async function installNormalizedSkill(options) {
 	}
 }
 //#endregion
-//#region lib/types/model.js
+//#region src/model.ts
 /** Fixed provider route used only for imported Skill normalization. */
 const NORMALIZER_PROVIDER = "deepseek-official";
 /** Fixed vision-capable model used only for imported Skill normalization. */
@@ -525,7 +525,7 @@ async function generateNormalizedSkill(ctx, request, signal) {
 	return parseNormalizationOutput(blocks.filter((block) => block.type === "text").map((block) => block.text).join(""));
 }
 //#endregion
-//#region lib/types/index.js
+//#region src/index.ts
 /** Native Host half of Skill Settings, inspection, and personal import. */
 const name = "ui-skill-manager";
 const inject = [
@@ -601,7 +601,10 @@ function resolveSessionSkillView(ctx, fallbackCwd, rawSessionId) {
 	};
 	const sessionId = rawSessionId;
 	const session = ctx.sessions.get(sessionId);
-	if (session === void 0) throw new Error("当前会话不存在，请返回对话后重试");
+	if (session === void 0) return {
+		skills: ctx.skills,
+		cwd: fallbackCwd
+	};
 	const live = ctx.agents.get(sessionId);
 	return {
 		skills: (live === void 0 ? void 0 : ctx.agentPresets.serviceFor(live, "skills")) ?? ctx.skills,

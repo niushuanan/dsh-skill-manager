@@ -1,7 +1,7 @@
 import { type ReactElement, useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import {
   IconChevronDownOutline14, IconChevronLeftOutline14, IconFolderOpenOutline16, IconLinkOutline16,
-  IconPaperclipOutline16, IconSkillOutline16, MarkdownText, Menu,
+  IconPaperclipOutline16, IconSkillOutline16, MarkdownText, Menu, SettingsSectionHeader,
 } from '@deepseek-ai/dsh-client-ui-primitives'
 import type {
   ManagedSkillDetail, ManagedSkillFile, ManagedSkillSummary, SkillImportRequest, SkillInstallResult, UploadedSkillFile,
@@ -16,6 +16,11 @@ export interface SkillManagerInjected {
 
 const SOURCE_LABELS = {
   personal: '个人', project: '项目', runtime: '运行时', custom: '自定义', bundled: '内置',
+} as const
+
+const MARKDOWN_LABELS = {
+  code: { copyLabel: '复制', copiedLabel: '已复制' },
+  footnotes: '脚注',
 } as const
 
 function skillIntro(skill: ManagedSkillSummary): string {
@@ -69,7 +74,9 @@ function FilePreview({ file }: { readonly file: ManagedSkillFile }): ReactElemen
       <span>{file.size.toLocaleString()} bytes</span>
     </div>
   )
-  if (file.kind === 'markdown') return <div className={css.markdown}><MarkdownText text={visibleMarkdown(file.content)} /></div>
+  if (file.kind === 'markdown') return (
+    <div className={css.markdown}><MarkdownText text={visibleMarkdown(file.content)} labels={MARKDOWN_LABELS} /></div>
+  )
   return <pre className={css.textPreview}><code>{file.content}</code></pre>
 }
 
@@ -78,6 +85,7 @@ export function SkillManagerSection({ listSkills, loadSkill, importSource }: Ski
   const [detail, setDetail] = useState<ManagedSkillDetail>()
   const [selectedFile, setSelectedFile] = useState<string>()
   const [busy, setBusy] = useState(false)
+  const [loadingDetail, setLoadingDetail] = useState(false)
   const [message, setMessage] = useState('')
   const [importMenuOpen, setImportMenuOpen] = useState(false)
   const [githubImportOpen, setGithubImportOpen] = useState(false)
@@ -100,7 +108,7 @@ export function SkillManagerSection({ listSkills, loadSkill, importSource }: Ski
   useEffect(() => { if (githubImportOpen) githubInput.current?.focus() }, [githubImportOpen])
 
   const openSkill = useCallback(async (name: string) => {
-    setBusy(true)
+    setLoadingDetail(true)
     setMessage('')
     try {
       const loaded = await loadSkill(name)
@@ -110,7 +118,7 @@ export function SkillManagerSection({ listSkills, loadSkill, importSource }: Ski
     } catch (error) {
       setMessage(error instanceof Error ? error.message : String(error))
     } finally {
-      setBusy(false)
+      setLoadingDetail(false)
     }
   }, [loadSkill])
 
@@ -148,12 +156,11 @@ export function SkillManagerSection({ listSkills, loadSkill, importSource }: Ski
 
   return (
     <section className={css.root} aria-label="Skill 管理">
-      <header className={css.header}>
-        <div>
-          <h2>Skill 管理</h2>
-          <p>查看当前能力，或把外部资料整理成个人 Skill。</p>
-        </div>
-        <div className={css.importActions}>
+      <SettingsSectionHeader
+        className={css.header}
+        title="Skill 管理"
+        description="查看当前能力，或把外部资料整理成个人 Skill。"
+        actions={<div className={css.importActions}>
           <Menu
             open={importMenuOpen}
             onClose={() => { setImportMenuOpen(false) }}
@@ -181,8 +188,8 @@ export function SkillManagerSection({ listSkills, loadSkill, importSource }: Ski
           />
           <input ref={fileInput} className={css.hiddenInput} aria-label="导入 Skill 文件" type="file" multiple onChange={(event) => { void importFiles(event.currentTarget.files); event.currentTarget.value = '' }} />
           <input ref={folderInput} className={css.hiddenInput} aria-label="导入 Skill 文件夹" type="file" multiple {...{ webkitdirectory: '', directory: '' }} onChange={(event) => { void importFiles(event.currentTarget.files); event.currentTarget.value = '' }} />
-        </div>
-      </header>
+        </div>}
+      />
 
       {githubImportOpen && (
         <form className={css.github} onSubmit={(event) => {
@@ -207,7 +214,7 @@ export function SkillManagerSection({ listSkills, loadSkill, importSource }: Ski
             {skills.map((skill) => {
               const intro = skillIntro(skill)
               return (
-                <button key={`${skill.source}:${skill.name}`} type="button" className={css.skillRow} onClick={() => { void openSkill(skill.name) }} disabled={busy}>
+                <button key={`${skill.source}:${skill.name}`} type="button" className={css.skillRow} onClick={() => { void openSkill(skill.name) }} disabled={busy || loadingDetail}>
                   <IconSkillOutline16 size={16} />
                   <span className={css.skillCopy}>
                     <span className={css.skillTitle}>

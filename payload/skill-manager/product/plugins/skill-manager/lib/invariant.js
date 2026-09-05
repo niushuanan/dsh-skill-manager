@@ -1,4 +1,4 @@
-//#region lib/types/invariant.js
+//#region src/invariant.ts
 const PACKAGE_NAME = "@deepseek-ai/dsh-client-ui-skill-manager";
 const name = "client-ui-skill-manager-invariant";
 const inject = ["invariants"];

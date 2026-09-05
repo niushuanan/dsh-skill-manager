@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "kind": "xiaozhuang-dsh-plugin-export",
-  "createdAt": "2026-08-27T07:32:18.714Z",
-  "sourceCommit": "38c2d27e5849b62f48d43f461b071218cfd3686d",
+  "createdAt": "2026-09-05T04:07:04.040Z",
+  "sourceCommit": "e745482d8f5e33497d9ed46a2a88681456024334",
   "plugins": [
     {
       "id": "skill-manager",
@@ -10,157 +10,137 @@
       "rows": [
         {
           "id": "ui-skill-manager",
-          "name": "@deepseek-ai/dsh-client-ui-skill-manager"
+          "name": "./lib/index.js"
         }
       ],
       "sources": [
         {
-          "kind": "repository",
-          "path": "packages/client/ui-skill-manager"
+          "kind": "product",
+          "path": "plugins/skill-manager"
         }
       ]
     }
   ],
   "files": [
     {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/README.md",
-      "size": 5585,
-      "sha256": "fee148ad1eeb63f9fd69e12b56ed6aeb551870364945d3443d4e66de47894bc5"
+      "path": "payload/shared/settings-icons.patch",
+      "size": 3863,
+      "sha256": "77e0d4dd0bb02e1946301320ec813972f5cfc0054c408c5e5dd44690e5f692a4"
     },
     {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/README.zh.md",
-      "size": 5038,
-      "sha256": "d58e39163bde7dc7c4625ba519861f93314008f82cc2a56a3fc2bea12fb528e8"
+      "path": "payload/skill-manager/product/plugins/skill-manager/cordis.patch.yml",
+      "size": 64,
+      "sha256": "4abe58d84d52d5cd41435f78324882225d2e62d12eacbb95c6a35a918765c3c9"
     },
     {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/lib/client.js",
-      "size": 30553,
-      "sha256": "c166e663f38e0e5a61ac195dc891fa83a9439c528c7106d73e486be3f5597b63"
+      "path": "payload/skill-manager/product/plugins/skill-manager/lib/client.js",
+      "size": 31918,
+      "sha256": "00d8d266f863af90cfabac70696bf188ead2245118e9db12b0307c87ae23a5a2"
     },
     {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/lib/index.js",
-      "size": 30192,
-      "sha256": "747ef857c3db5dd66ffc895990c0b0513c6b99789a123d175fde2c092273c820"
+      "path": "payload/skill-manager/product/plugins/skill-manager/lib/client.js.map",
+      "size": 28367,
+      "sha256": "388e6b2279974d3d50447625907ad64621ef4a4c3bcc81b4b3bbf250a73a9432"
     },
     {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/lib/invariant.js",
-      "size": 338,
-      "sha256": "51a61de9f70944d455231eee41cfbfcc5920f2a8916b38ff30006cb53716cd03"
+      "path": "payload/skill-manager/product/plugins/skill-manager/lib/index.js",
+      "size": 30153,
+      "sha256": "6da2e9758a50779deacd3b7f1457c7811415934a266c1445b0f473d311fa0bac"
     },
     {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/lib/types/catalog.d.ts",
-      "size": 2087,
-      "sha256": "bde0abb9b0f2da9d5c7f6d825484afe5c8a7329f8dc737722bc5966b8b999ec8"
+      "path": "payload/skill-manager/product/plugins/skill-manager/lib/invariant.js",
+      "size": 332,
+      "sha256": "e712802037fd1be39811cb697b4a698c47bc910db906664f22c2046757a976c9"
     },
     {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/lib/types/client/SkillManagerSection.d.ts",
-      "size": 638,
-      "sha256": "7e17790825e5465017ef3b2b776c09a5db9b98c0fb8763bfbdb834009ad9a3c8"
+      "path": "payload/skill-manager/product/plugins/skill-manager/package.json",
+      "size": 3036,
+      "sha256": "5059ee60466d09d455a8b61ef25ffb1f365c0515fc8c13d3419bbd915a83b433"
     },
     {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/lib/types/client/index.d.ts",
-      "size": 333,
-      "sha256": "e972510140c88e61922cd0d096a28dfa573dba5421e1fe5de65e77cf4f2fb83f"
+      "path": "payload/skill-manager/product/plugins/skill-manager/README.i18n.yaml",
+      "size": 442,
+      "sha256": "b7e312e6fbba3b9bb9f6664c54a6bc8d9bdc1d563f80cfb0558e3c482a48be81"
     },
     {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/lib/types/import.d.ts",
-      "size": 3221,
-      "sha256": "d30248354d6f04f5a57ec364ade6f22ad3a4974c95d15d11370224901872ec04"
+      "path": "payload/skill-manager/product/plugins/skill-manager/README.md",
+      "size": 5840,
+      "sha256": "15ff94a95c113b594a40ef51924db31a6a4b9410d8a0b3b4c25dbd5920621805"
     },
     {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/lib/types/index.d.ts",
-      "size": 3958,
-      "sha256": "6f50e3d8594978c32f52b23fd242e71f83064c24b5855630ccbd487193d5a167"
+      "path": "payload/skill-manager/product/plugins/skill-manager/README.zh.md",
+      "size": 5250,
+      "sha256": "5678338f9c2871ace327453cc45a2a24a23d6b9edce0da135241702d288e277e"
     },
     {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/lib/types/invariant.d.ts",
-      "size": 262,
-      "sha256": "9270601ecd79f14a4d22bfcd704fbe96610e6dd0b997439d7f77da4b962519b3"
-    },
-    {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/lib/types/model.d.ts",
-      "size": 1077,
-      "sha256": "a96592eb748f97c6c24a5d0096c924c0ea0abac5b70c7e064e8a47737a517ba0"
-    },
-    {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/lib/types/types.d.ts",
-      "size": 1871,
-      "sha256": "d93de5084c6a84311f0b8d311b3add37668b16bdd6e2f34defe5eb175117e2c1"
-    },
-    {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/package.json",
-      "size": 2753,
-      "sha256": "719428bebcac6231c434d67e3a19e90ef2fe643a0d405cbbc4ea1db193923282"
-    },
-    {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/src/catalog.ts",
+      "path": "payload/skill-manager/product/plugins/skill-manager/src/catalog.ts",
       "size": 7569,
       "sha256": "73461779a5d9c23e90154c22df4fd37119978b2915f91ac8deecbdab82757f11"
     },
     {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/src/client/SkillManagerSection.module.css",
-      "size": 10208,
-      "sha256": "b2e2999685606f2d6b2552e7a26c5a98812b25bf4b00f0370f5394259ad9a5af"
+      "path": "payload/skill-manager/product/plugins/skill-manager/src/client/index.ts",
+      "size": 3210,
+      "sha256": "6b00652bf501781e58bc63d809ec24e9201728cc596fddfb2e18806b1c7f5ee0"
     },
     {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/src/client/SkillManagerSection.tsx",
-      "size": 12732,
-      "sha256": "eea24d092f142ca87465135ac3fc95ba55559cb5f3dfe0ffb5a06f2be365344f"
+      "path": "payload/skill-manager/product/plugins/skill-manager/src/client/SkillManagerSection.module.css",
+      "size": 10103,
+      "sha256": "525f41a97071566ea649da36c69086ad4547b2e3aba9be200220206edb043a24"
     },
     {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/src/client/index.ts",
-      "size": 2822,
-      "sha256": "28f151731c4e54715c4746dec4c2cc2cc10d15683d171461b08b1d8a08872384"
+      "path": "payload/skill-manager/product/plugins/skill-manager/src/client/SkillManagerSection.tsx",
+      "size": 13003,
+      "sha256": "915e7df0fa9626d2f41a1e988b3202b618bb5007f97d333eed678da7a367b8b5"
     },
     {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/src/css-modules.d.ts",
+      "path": "payload/skill-manager/product/plugins/skill-manager/src/css-modules.d.ts",
       "size": 109,
       "sha256": "1b119eae282e4981c7ee24bbcf0ceafe34d57f6d5e6b148b2b7cc7c09cd89513"
     },
     {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/src/import.ts",
+      "path": "payload/skill-manager/product/plugins/skill-manager/src/import.ts",
       "size": 14987,
       "sha256": "4ef88ae1ffd89741367ddd93e10409d842df8954706b2b970a77917aeafcb068"
     },
     {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/src/index.ts",
-      "size": 11915,
-      "sha256": "0d216a24eab483daa4f54b9164a973fd0cf82decc921d18abfdfb5354a93fa4d"
+      "path": "payload/skill-manager/product/plugins/skill-manager/src/index.ts",
+      "size": 12311,
+      "sha256": "fea34d01200b73ed911babf532f7a5af55e7094d349d19a1ce8b58f638946424"
     },
     {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/src/invariant.ts",
+      "path": "payload/skill-manager/product/plugins/skill-manager/src/invariant.ts",
       "size": 615,
       "sha256": "ce58a8714bc10805b43564f0104b032b670ceaa81a9bebe2bc9e5272a324ea34"
     },
     {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/src/model.ts",
+      "path": "payload/skill-manager/product/plugins/skill-manager/src/model.ts",
       "size": 2537,
       "sha256": "49ff2319408c73af032958c61e359fdc53208df7a69e3db55128ad1d1ec23aec"
     },
     {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/src/types.ts",
+      "path": "payload/skill-manager/product/plugins/skill-manager/src/types.ts",
       "size": 1737,
       "sha256": "da086212fc3469ab93403b61bda81ccc4b7b6f9203110403873a5dd8efa0d36a"
     },
     {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/tsconfig.client.json",
-      "size": 452,
-      "sha256": "adbdcd2402a2138cee92f192aa8f77c95d67e8e1c1fb728c0729c4efd519cdcd"
+      "path": "payload/skill-manager/product/plugins/skill-manager/tsconfig.client.json",
+      "size": 604,
+      "sha256": "1956bb1c9421bd256b883424ca2d1ce785c45ac172dd77ddd95ed371c269ad5c"
     },
     {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/tsconfig.host.json",
-      "size": 633,
-      "sha256": "7fd3e6b8eba1584a7e658496ff9eb91f9ce89267f6d1b444167cbabc1ae9cb13"
+      "path": "payload/skill-manager/product/plugins/skill-manager/tsconfig.host.json",
+      "size": 708,
+      "sha256": "84f5d722aedabbb149619e45b89c7e7b16f6c75b39afe358a0d74319e7720c9c"
     },
     {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/tsconfig.json",
+      "path": "payload/skill-manager/product/plugins/skill-manager/tsconfig.json",
       "size": 122,
       "sha256": "9ae2773ce422b78211f4ed8c2d4f6adb6737a9d0f33c4c392b1ea01a41bec759"
     },
     {
-      "path": "payload/skill-manager/repository/packages/client/ui-skill-manager/tsdown.config.ts",
-      "size": 181,
-      "sha256": "051b6bc7cbc6a87b4ad9ec104cbd7b09b3248abc7dee1f024f116e464ec88f99"
+      "path": "payload/skill-manager/product/plugins/skill-manager/tsdown.config.ts",
+      "size": 188,
+      "sha256": "7d1442bc23cff36e9d6835616e9556218e20abeeaade61b7023e4b19dcaeb538"
     }
   ],
   "excludes": [
@@ -172,5 +152,10 @@
     "sessions",
     "conversation history",
     "user settings"
+  ],
+  "sourceRepository": "https://github.com/niushuanan/xiaozhuang-dsh",
+  "repository": "https://github.com/niushuanan/dsh-skill-manager",
+  "compatibilityPatches": [
+    "payload/shared/settings-icons.patch"
   ]
 }
