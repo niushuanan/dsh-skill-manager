@@ -507,10 +507,7 @@ async function generateNormalizedSkill(ctx, request, signal) {
 				type: "text",
 				text: request.input
 			}],
-			source: {
-				kind: "plugin",
-				plugin: "ui-skill-manager"
-			}
+			source: { kind: "user" }
 		})],
 		tools: [],
 		maxTokens: 6e3,
